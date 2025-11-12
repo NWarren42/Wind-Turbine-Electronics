@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "INA101HP")(type "KiCad")(uri "${KIPRJMOD}/Symbols/INA101HP")(options "")(descr ""))
+)
