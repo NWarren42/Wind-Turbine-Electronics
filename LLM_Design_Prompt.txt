@@ -1,0 +1,126 @@
+project: Small Wind Turbine Power Stage
+
+battery:
+  chemistry: Li-ion (LiPo)
+  series_cells: 4
+  nominal_voltage_v: 14.8
+  cv_full_voltage_v: 16.8
+  charge_profile:
+    mode: CC_CV
+    cc_limit_a: "<= C-rate of pack (provide value)"
+    cv_voltage_v: 16.8
+    termination_current_a: "0.05–0.1 * CC"
+  rationale: >
+    Li-ion chemistry requires controlled current and constant-voltage charging.
+    Lead-acid diversion controllers rely on voltage toggling and cannot ensure cell safety.
+    This design uses CC/CV limits to protect the pack and extend lifetime.
+
+generator:
+  ke_v_per_rpm: 0.175
+  note: "Open-circuit voltage = ke * RPM; loaded voltage is lower and depends on converter draw."
+  rpm_limits:
+    trip_rpm: 600
+    rationale: >
+      With ke=0.175, open-circuit 120 V ≈ 685 RPM. 
+      Setting an overspeed trip below this (≈600 RPM) ensures all 150–200 V-rated parts survive gust events.
+
+dc_bus:
+  working_clamp_v: 90
+  hysteresis_v: [85, 95]
+  parts_voltage_rating_v: 200
+  tvs_clamp_selection_v: 100-120 standoff
+  rationale: >
+    A 90 V working bus balances efficiency and safety.
+    Higher voltage lowers turbine-side current (reducing I²R losses) while staying far below
+    the worst-case open-circuit voltage. 200 V-class parts are inexpensive and provide 
+    comfortable headroom for gusts or converter faults.
+
+power_path_priority:
+  - mppt_converter_to_battery
+  - dump_chopper_to_resistor
+  - mechanical_brake
+
+converter:
+  topology: "Non-inverting synchronous 4-switch buck-boost converter"
+  vin_range_v: [25, 120]
+  vout_range_v: [12, 17]
+  control:
+    inner_loop: "Input-current control (kHz range) with current-mode feedback"
+    outer_loop: "MPPT (Perturb & Observe on Pin = Vbus * Iin)"
+    charge_overlay: "CC/CV regulation for Li-ion safety; overrides MPPT when battery is near full"
+  protections:
+    input_overvoltage_v: 100
+    overcurrent_limit_a: "Set by magnetics and FET thermal limits"
+  rationale: >
+    The 4-switch non-inverting buck-boost handles both high and low wind conditions.
+    In high winds (Vin > Vbat), it acts as a buck; in low winds (Vin < Vbat), it acts as a boost.
+    This provides seamless MPPT operation across the full turbine speed range.
+    Compared to a SEPIC, it offers higher efficiency (especially above 150 W),
+    lower switch stress (~max(Vin, Vout) instead of Vin+Vout),
+    continuous input current (gentler on the generator), and bidirectional capability if desired.
+    Although control is more complex, the architecture is standard for high-performance renewable converters.
+
+mppt_algorithm:
+  type: "Perturb and Observe (P&O)"
+  loop_rate_hz: 10-50
+  inputs: [V_bus, I_bus]
+  output: "Target input current or duty ratio for converter"
+  rationale: >
+    MPPT dynamically adjusts converter loading to maximize power at any wind speed.
+    Implemented in firmware (ESP32 or MCU), it runs above the converter’s analog current loop.
+    Works identically in buck, boost, or buck-boost modes.
+
+dump_chopper:
+  location: "Across DC bus (post-rectifier)"
+  clamp_target_v: 90
+  control: "PWM to hold V_bus within hysteresis band; defaults ON if converter disabled"
+  sizing:
+    formula_resistance_ohm: "R <= Vc^2 / P_excess_max"
+    formula_current_a: "I_max = Vc / R"
+    example: "If Vc=90 V and P_excess_max=600 W -> R<=13.5 Ω; choose ~12 Ω; I≈7.5 A; P≈630 W"
+    thermal: ">= 2× expected continuous power dissipation; finned or water-cooled resistor recommended"
+  mosfet:
+    vds_rating_v: 150-200
+    id_rating_a: ">= 2 * I_max"
+    gate_driver: "Dedicated gate driver; include flyback/snubber network"
+  rationale: >
+    The chopper resistor provides fast electronic braking and voltage clamping.
+    When the battery is full or MPPT current-limited, it maintains turbine loading to prevent overspeed.
+    PWM control allows smooth, quiet operation and avoids relay wear.
+
+rectifier_and_bus:
+  rectifier_piv_v: 200
+  bulk_caps_v: 160-200
+  snubbers: "RC or TVS network across bridge and bus"
+  rationale: >
+    The rectifier and bus capacitors must tolerate the highest expected open-circuit voltage (~150 V)
+    and transient spikes from switching or gusts. 200 V parts are standard and inexpensive.
+
+mechanical_brake:
+  type: "Friction or electrical short through low-value shunt"
+  trigger_conditions:
+    - "V_bus > 100 V"
+    - "RPM > 600"
+    - "Controller fault"
+  rationale: >
+    Provides a fail-safe stop if the converter or dump fails. 
+    It is only engaged under fault or overspeed conditions.
+
+sensing_and_logging:
+  measure: [V_bus, I_bus_in, V_bat, I_bat, RPM]
+  optional: [wind_speed]
+  purpose: "MPPT tuning, Cp–λ reconstruction, safety interlocks, and performance monitoring"
+
+safety_rules:
+  - "Never unload a spinning turbine; dump chopper must default ON if converter or MCU resets."
+  - "Respect Li-ion CC/CV limits to avoid cell overcharge or thermal runaway."
+  - "Use crowbar+fuse or MOV as sacrificial over-voltage protection."
+  - "Overspeed logic must always engage braking before hardware ratings are exceeded."
+
+design_justification_summary: >
+  - The 90 V DC bus minimizes generator current losses and aligns with 200 V-rated hardware for cost-effective robustness.
+  - The 4-switch non-inverting buck-boost converter maintains efficient operation across all wind speeds by supporting both buck and boost modes.
+  - MPPT is implemented in firmware to maximize turbine power capture dynamically.
+  - CC/CV charging ensures safe Li-ion handling.
+  - The dump chopper provides fast braking and voltage clamping, preventing overspeed and protecting the electronics.
+  - Layered protections (converter, dump, mechanical brake) create a fault-tolerant system capable of surviving gust-induced open-circuit voltages without damage.
