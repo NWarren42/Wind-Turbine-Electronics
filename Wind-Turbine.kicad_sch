@@ -450,579 +450,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "INA101HP:INA101HP"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U1"
-				(at 0 22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "INA101HP"
-				(at 0 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "INA101HP:DIP254P762X508-14"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Texas Instruments"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Very High Accuracy Instrumentation Amplifier"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PACKAGE" "DIP-14"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MPN" "INA101HP"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "PDIP-14 Texas Instruments"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "OC_FARNELL" "1470348"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/INA101HP/Texas+Instruments/view-part/?ref=snap"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "INA101HP"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SUPPLIER" "Texas Instruments"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "OC_NEWARK" "74K3804"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/INA101HP/Texas+Instruments/view-part/?ref=eda"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "INA101HP_0_0"
-				(rectangle
-					(start -11.43 17.78)
-					(end 11.43 -25.4)
-					(stroke
-						(width 0.4064)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin power_in line
-					(at -16.51 12.7 0)
-					(length 5.08)
-					(name "+VCC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 7.62 0)
-					(length 5.08)
-					(name "OFFSET_ADJ"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 5.08 0)
-					(length 5.08)
-					(name "OFFSET_ADJ."
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 2.54 0)
-					(length 5.08)
-					(name "GAIN_SET_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 0 0)
-					(length 5.08)
-					(name "GAIN_SET_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 -2.54 0)
-					(length 5.08)
-					(name "GAIN_SENSE_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 -5.08 0)
-					(length 5.08)
-					(name "GAIN_SENSE_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 -7.62 0)
-					(length 5.08)
-					(name "COMMON"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -16.51 -12.7 0)
-					(length 5.08)
-					(name "-INPUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -16.51 -15.24 0)
-					(length 5.08)
-					(name "+INPUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -16.51 -20.32 0)
-					(length 5.08)
-					(name "-VCC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 16.51 12.7 180)
-					(length 5.08)
-					(name "A2_OUTPUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 16.51 10.16 180)
-					(length 5.08)
-					(name "A1_OUTPUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 16.51 7.62 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+15V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+15V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+15V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+15V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+15V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -1143,107 +570,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:-15V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "-15V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"-15V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "-15V_0_0"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "-15V_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
@@ -1461,17 +787,6 @@
 		)
 		(uuid "c9aab8c3-8d89-4fa0-9e84-dc35ac9e7817")
 	)
-	(text "G = 1 + 40k/Rg\n  = 1 + 40k/730\n ~= 55.8\n\nI = Vout/(55.8 * 0.05)\n ~= 0.358 * Vout"
-		(exclude_from_sim no)
-		(at 205.232 51.562 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "db6b9549-f92e-4b01-88d7-5b9aad2a8307")
-	)
 	(text "Output Voltage Monitor"
 		(exclude_from_sim no)
 		(at 99.822 78.232 0)
@@ -1481,12 +796,6 @@
 			)
 		)
 		(uuid "f561fe54-296e-4d48-8ce5-147ba0df3514")
-	)
-	(junction
-		(at 167.64 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04ba4fed-f3f6-4e40-a7d0-ccafca30bd70")
 	)
 	(junction
 		(at 77.47 44.45)
@@ -1511,12 +820,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e01321e-8f96-4b65-9ba3-52a19b1d1b23")
-	)
-	(junction
-		(at 140.97 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36b677d6-7cb0-4da0-94a7-02ab0ecac756")
 	)
 	(junction
 		(at 77.47 58.42)
@@ -1555,12 +858,6 @@
 		(uuid "c4ad3298-2ddd-4dfc-8948-d66e3b2fd8f7")
 	)
 	(junction
-		(at 149.86 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5de0094-3799-49b2-89a2-941bc37bfb38")
-	)
-	(junction
 		(at 101.6 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1573,12 +870,6 @@
 		(uuid "de63ce28-f221-42d3-b0b1-38d99150a04d")
 	)
 	(junction
-		(at 170.18 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e05271e1-8648-4e34-9784-2ea8b9f06617")
-	)
-	(junction
 		(at 132.08 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1589,14 +880,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e644eaf5-ef10-421e-9ebc-5f87885408ca")
-	)
-	(no_connect
-		(at 204.47 35.56)
-		(uuid "5071564c-e9bd-4194-8429-b0ce27c8637a")
-	)
-	(no_connect
-		(at 204.47 33.02)
-		(uuid "9a52fd35-9f54-4603-8970-3844b8eebfaa")
 	)
 	(wire
 		(pts
@@ -1627,16 +910,6 @@
 			(type default)
 		)
 		(uuid "031b1a2f-9d8d-45da-8184-484463204c93")
-	)
-	(wire
-		(pts
-			(xy 167.64 43.18) (xy 171.45 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08f2612c-68c6-48e1-9434-e6c2e759aadf")
 	)
 	(wire
 		(pts
@@ -1690,16 +963,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 30.48) (xy 151.13 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a11236e-258b-4906-a8c8-d57886a0283e")
-	)
-	(wire
-		(pts
 			(xy 77.47 58.42) (xy 77.47 63.5)
 		)
 		(stroke
@@ -1707,26 +970,6 @@
 			(type default)
 		)
 		(uuid "23a16bc5-cd7f-4ad6-9add-96af86f50b0d")
-	)
-	(wire
-		(pts
-			(xy 168.91 66.04) (xy 171.45 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "270707fc-39cc-4e9d-a156-0e47ae2efd1a")
-	)
-	(wire
-		(pts
-			(xy 149.86 30.48) (xy 149.86 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "282cddac-16aa-40d6-9aa9-c96bc502b08c")
 	)
 	(wire
 		(pts
@@ -1740,26 +983,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 30.48) (xy 140.97 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29872fd9-76f7-4ea9-8ecd-b9dae21478ed")
-	)
-	(wire
-		(pts
-			(xy 167.64 48.26) (xy 171.45 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a25b908-5092-403c-afd1-490a5ca4cad5")
-	)
-	(wire
-		(pts
 			(xy 77.47 41.91) (xy 77.47 44.45)
 		)
 		(stroke
@@ -1767,16 +990,6 @@
 			(type default)
 		)
 		(uuid "2bce6ad2-ebef-43eb-83f6-9bb421dc9ea0")
-	)
-	(wire
-		(pts
-			(xy 170.18 33.02) (xy 171.45 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bd556b9-2ff3-48f2-a3eb-5537d2848444")
 	)
 	(wire
 		(pts
@@ -1900,16 +1113,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 27.94) (xy 170.18 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c98a0be-b812-464e-9495-1587400e8e06")
-	)
-	(wire
-		(pts
 			(xy 77.47 44.45) (xy 77.47 46.99)
 		)
 		(stroke
@@ -1927,16 +1130,6 @@
 			(type default)
 		)
 		(uuid "582a3425-6d9b-4fa5-8566-a8b4c0ecad39")
-	)
-	(wire
-		(pts
-			(xy 163.83 50.8) (xy 170.18 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a69e699-20e8-41a8-bc63-1316acacc4c9")
 	)
 	(wire
 		(pts
@@ -1960,16 +1153,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 49.53) (xy 163.83 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63a14913-149a-4cec-9d9b-c040ec041774")
-	)
-	(wire
-		(pts
 			(xy 119.38 58.42) (xy 132.08 58.42)
 		)
 		(stroke
@@ -1987,16 +1170,6 @@
 			(type default)
 		)
 		(uuid "762303de-0f65-4319-bd8a-2b7ac1eee241")
-	)
-	(wire
-		(pts
-			(xy 204.47 38.1) (xy 209.55 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78effa65-cf38-4d00-8109-bfaab0641100")
 	)
 	(wire
 		(pts
@@ -2020,16 +1193,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 45.72) (xy 171.45 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ee605b5-af50-44ec-87ca-c4a04ad8447f")
-	)
-	(wire
-		(pts
 			(xy 119.38 30.48) (xy 132.08 30.48)
 		)
 		(stroke
@@ -2050,16 +1213,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 58.42) (xy 171.45 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a7d9e3f-66aa-4e3c-b19e-b013fb932ff8")
-	)
-	(wire
-		(pts
 			(xy 49.53 44.45) (xy 52.07 44.45)
 		)
 		(stroke
@@ -2070,16 +1223,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 30.48) (xy 149.86 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b1353e9-ccd8-4155-affe-155b60f97846")
-	)
-	(wire
-		(pts
 			(xy 52.07 54.61) (xy 52.07 58.42)
 		)
 		(stroke
@@ -2087,26 +1230,6 @@
 			(type default)
 		)
 		(uuid "a4d174d3-9c89-477f-a3ed-98fa5adb8965")
-	)
-	(wire
-		(pts
-			(xy 140.97 60.96) (xy 171.45 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a577baee-daad-4885-8711-a5b2925b936a")
-	)
-	(wire
-		(pts
-			(xy 140.97 30.48) (xy 142.24 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5d135a5-87a2-4ea7-8eb8-ed6fc267e793")
 	)
 	(wire
 		(pts
@@ -2130,16 +1253,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 45.72) (xy 170.18 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b286b5c2-ce68-4142-babe-ca519ba16c13")
-	)
-	(wire
-		(pts
 			(xy 99.06 44.45) (xy 101.6 44.45)
 		)
 		(stroke
@@ -2160,16 +1273,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 50.8) (xy 171.45 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bba26424-04a6-4856-8646-ebcf694d8949")
-	)
-	(wire
-		(pts
 			(xy 77.47 58.42) (xy 101.6 58.42)
 		)
 		(stroke
@@ -2177,26 +1280,6 @@
 			(type default)
 		)
 		(uuid "bf0cb377-e1f0-4aa6-9a6f-46bf0feb02b9")
-	)
-	(wire
-		(pts
-			(xy 163.83 43.18) (xy 163.83 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2e143ed-9c89-4559-b825-804763e0a706")
-	)
-	(wire
-		(pts
-			(xy 168.91 66.04) (xy 168.91 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c38144ec-1a51-4d33-b899-bc4e2c9c2eee")
 	)
 	(wire
 		(pts
@@ -2210,16 +1293,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 43.18) (xy 167.64 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d47eae49-fbd4-4cb4-89e8-9683550ed297")
-	)
-	(wire
-		(pts
 			(xy 177.8 86.36) (xy 177.8 87.63)
 		)
 		(stroke
@@ -2227,16 +1300,6 @@
 			(type default)
 		)
 		(uuid "d9a95ba3-fcb1-45ec-830c-e48cbdb6b4c0")
-	)
-	(wire
-		(pts
-			(xy 168.91 53.34) (xy 168.91 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e324f3cd-81be-4abb-a7ed-0c0c5fbfee80")
 	)
 	(wire
 		(pts
@@ -2290,26 +1353,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 53.34) (xy 171.45 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb90041d-1284-43c6-b1c3-02cdb478b309")
-	)
-	(wire
-		(pts
-			(xy 167.64 43.18) (xy 167.64 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc82a122-e467-47b4-ad4a-776adca6f540")
-	)
-	(wire
-		(pts
 			(xy 132.08 30.48) (xy 132.08 41.91)
 		)
 		(stroke
@@ -2348,16 +1391,6 @@
 		)
 		(uuid "1e4fd968-12ee-4792-9ac4-ef51acd2bf59")
 	)
-	(label "CURRENT_OUT_MCU"
-		(at 209.55 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "40ca708c-decf-48e8-a5a6-1c2f8b315001")
-	)
 	(label "BLUE_PHASE_POWER"
 		(at 49.53 44.45 180)
 		(effects
@@ -2369,7 +1402,7 @@
 		(uuid "52b4dc77-33c1-414b-a1f0-24eef989e200")
 	)
 	(label "V_OUT_RECTIFIED"
-		(at 121.92 30.48 0)
+		(at 140.97 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2397,16 +1430,6 @@
 			(justify right bottom)
 		)
 		(uuid "84551d67-5a9d-40c2-9efb-17dbb1407c1b")
-	)
-	(label "VOUT_TO_LOAD"
-		(at 151.13 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9bda87a8-fe53-40b1-926f-71125b5dd18c")
 	)
 	(label "V_OUT_RECTIFIED"
 		(at 109.22 86.36 0)
@@ -2543,310 +1566,6 @@
 			(project ""
 				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "INA101HP:INA101HP")
-		(at 187.96 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f7f1efb-5ef7-4095-a57f-2f53b4063c27")
-		(property "Reference" "U1"
-			(at 187.96 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "INA101HP"
-			(at 187.96 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "INA101HP:DIP254P762X508-14"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 187.96 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Texas Instruments"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Very High Accuracy Instrumentation Amplifier"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "DIP-14"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "INA101HP"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "PDIP-14 Texas Instruments"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OC_FARNELL" "1470348"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/INA101HP/Texas+Instruments/view-part/?ref=snap"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "INA101HP"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" "Texas Instruments"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OC_NEWARK" "74K3804"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/INA101HP/Texas+Instruments/view-part/?ref=eda"
-			(at 196.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "d820b152-2c6e-42f4-8e17-285218dcd71f")
-		)
-		(pin "13"
-			(uuid "abe06363-7f95-490c-a559-002cf3de9090")
-		)
-		(pin "8"
-			(uuid "1fa9ce7e-51a4-41e8-a129-d1d2e328cbe8")
-		)
-		(pin "14"
-			(uuid "efc6b784-859e-45b9-8afc-777d751588cc")
-		)
-		(pin "5"
-			(uuid "944fa1a6-2d81-4f3e-be36-5a437dfd33b6")
-		)
-		(pin "2"
-			(uuid "745c2573-9bb7-4b02-b1cf-136c519fae3b")
-		)
-		(pin "7"
-			(uuid "d3736015-39e8-40d5-a5a8-1feda9639a03")
-		)
-		(pin "6"
-			(uuid "0f795c6a-ec28-4222-9464-a696fdec54f4")
-		)
-		(pin "10"
-			(uuid "60bccb2d-9968-498e-85df-aac481b96eb2")
-		)
-		(pin "11"
-			(uuid "a9a82eff-a8b2-4dea-8f50-8ac1c5aeed44")
-		)
-		(pin "3"
-			(uuid "ac535f79-c092-4faa-8f61-0afd68c5fd9a")
-		)
-		(pin "12"
-			(uuid "1cdbc0f1-5723-4d2e-b6e4-c0d2cd5ee71e")
-		)
-		(pin "9"
-			(uuid "334a25eb-d4ab-4751-be96-f0664a1541f5")
-		)
-		(pin "1"
-			(uuid "fd3e6890-531e-43b9-8c7f-04f49228fe1c")
-		)
-		(instances
-			(project ""
-				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 144.78 30.48 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "439d738e-5f1c-490a-b83d-3ae1e03df97f")
-		(property "Reference" "R8"
-			(at 143.256 33.782 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "5m"
-			(at 143.256 36.068 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 144.78 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "def05811-7ebe-42c9-bdce-d6b9be9d9e0d")
-		)
-		(pin "1"
-			(uuid "aea87331-d348-4054-91cb-4ba5c25048f8")
-		)
-		(instances
-			(project "Wind-Turbine"
-				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3049,75 +1768,6 @@
 			(project ""
 				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 163.83 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "63be8ca6-1c98-450e-9336-ad517c3158a5")
-		(property "Reference" "R7"
-			(at 162.052 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "730"
-			(at 162.052 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 163.83 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 163.83 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4d4cc8d3-cf16-41c3-b2c7-4517bd302db0")
-		)
-		(pin "1"
-			(uuid "e419359f-069e-4bca-b04d-3382f9f98cec")
-		)
-		(instances
-			(project ""
-				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -3430,72 +2080,6 @@
 			(project ""
 				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-15V")
-		(at 168.91 67.31 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "84d9ddd0-cee5-4ee8-990b-0435fb5688b2")
-		(property "Reference" "#PWR07"
-			(at 168.91 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-15V"
-			(at 168.91 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-15V\""
-			(at 168.91 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f370139-c1c4-4198-8800-bfa437ddae19")
-		)
-		(instances
-			(project ""
-				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3884,72 +2468,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+15V")
-		(at 170.18 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b49c9fc0-45ad-497f-8953-27a33f84212f")
-		(property "Reference" "#PWR05"
-			(at 170.18 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+15V"
-			(at 170.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 170.18 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79d5e8a2-d48e-40fc-91fd-59d2fd4a6128")
-		)
-		(instances
-			(project ""
-				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 119.38 44.45 0)
 		(unit 1)
@@ -4014,71 +2532,6 @@
 			(project ""
 				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 168.91 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "babfa19a-5b10-459c-b08f-e59d62f7901d")
-		(property "Reference" "#PWR08"
-			(at 168.91 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 172.466 54.864 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f6609de-7cd6-49f9-af69-dbb8383585ae")
-		)
-		(instances
-			(project "Wind-Turbine"
-				(path "/9db327ac-6ecf-4523-b2c5-275532d2f2f4"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4344,7 +2797,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "8"
+		(property "Value" "4.9"
 			(at 180.34 91.4399 0)
 			(effects
 				(font
